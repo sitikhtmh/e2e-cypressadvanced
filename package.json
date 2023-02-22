@@ -1,0 +1,17 @@
+{
+  "name": "cypress-advanced",
+  "version": "1.0.0",
+  "description": "praktek",
+  "main": "index.js",
+  "author": "sitikhtmh",
+  "license": "MIT",
+  "devDependencies": {
+    "cypress": "^12.6.0",
+    "prettier": "^2.8.4"
+  },
+
+  "scripts": {
+    "cy:open": "cypress open",
+    "cy:run": "cypress run"
+  }
+}
