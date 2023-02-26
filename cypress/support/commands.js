@@ -39,6 +39,20 @@ Cypress.Commands.add("login", (username, password) => {
     cy.get('input[name="submit"]').click();
   });
   
-  Cypress.Commands.add("clickbutton", (label) => {
-    cy.get("a").contains(label).click();
-  });
+ Cypress.Commands.add('feedback', (name, email, subject, comment) => {
+    cy.clearCookies();
+    cy.clearLocalStorage();
+  
+    cy.get("#name").clear();
+    cy.get("#name").type(name);
+
+    cy.get('input[name="email"]').clear();
+    cy.get('input[name="email"]').type(email);
+
+    cy.get("#subject").clear();
+    cy.get("#subject").type(subject);
+
+    cy.get("#comment").clear();
+    cy.get("#comment").type(comment);
+
+  })
