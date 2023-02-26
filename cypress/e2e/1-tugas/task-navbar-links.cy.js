@@ -32,6 +32,22 @@ describe('Navbar Test', () => {
             cy.contains("Send Message").click()
            
             cy.url().should('include', '/sendFeedback.html')
+
+            cy.get('.offset3.span6')
+            .find('div')
+            .should(($div) => {
+            
+                const texts = $div.map((i, el) => Cypress.$(el).text())
+
+                const heading = texts.get()
+
+                expect(heading, 'has 1 heading').to.have.length(1)
+
+                expect(
+                    heading,
+                    'Feedback'
+                    )
+            })
         })
     })
 
@@ -40,7 +56,7 @@ describe('Navbar Test', () => {
        
         cy.contains('Zero Bank').click()
         cy.url().should('include', 'index.html')
-        
+
         //assertion
         cy.get('.custom.carousel-caption')
             .find('p')
