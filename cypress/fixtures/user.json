@@ -4,5 +4,13 @@
   "name":"sitikhtmhh",
   "email":"siti@gmail.com",
   "subject":"testttt",
-  "comment": "Apakah Apakah Apakah Apakah Apakah????"
+  "comment": "Apakah Apakah Apakah Apakah Apakah????",
+
+  "usernameshop": "sasya",
+  "emailshop": "sasya123@gmail.com",
+  "passwordshop": "Sasya12345!",
+
+  "usernameinvalid": "sisi",
+  "emailinvalid": "sisi123@gmail.com",
+  "passwordinvalid": "Sisi12345!"
 }
